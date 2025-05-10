@@ -1,0 +1,135 @@
+ /* UserProfile.css */
+
+.user-profile-page {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #ede9fe, #f3f4f6);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.user-profile-container {
+  background-color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0 0 1.2rem 0;
+  color: #1f2937;
+}
+
+
+.profile-picture {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #6d28d9;
+}
+
+.user-profile-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.user-profile-form div {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-profile-form label {
+  font-size: 0.95rem;
+  color: #374151;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.user-profile-form input[type="text"],
+.user-profile-form input[type="email"],
+.user-profile-form input[type="file"],
+.user-profile-form textarea {
+  width: 100%;
+  padding: 0.55rem;
+  border-radius: 10px;
+  border: 1px solid #d1d5db;
+  font-size: 0.95rem;
+  background-color: #f9fafb;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+
+.user-profile-form input:focus,
+.user-profile-form textarea:focus {
+  border-color: #6d28d9;
+  outline: none;
+  background-color: #fff;
+}
+
+.user-profile-form textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.user-profile-form input[type="file"] {
+  padding: 0.4rem;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.user-profile-form button {
+  background-color: #6d28d9;
+  color: white;
+  border: none;
+  padding: 0.6rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+
+.delete-profile-text {
+  font-size: 1rem;
+  color: red;
+  font-style: italic;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: color 0.3s;
+}
+
+.delete-profile-text:hover {
+  color: #9b1d1d;
+}
+
+
+.profile-picture-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.profile-bio-caption {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #4b5563;
+  font-style: italic;
+  text-align: center;
+  max-width: 300px;
+  word-wrap: break-word;
+}

@@ -1,0 +1,96 @@
+
+   /* src/pages/CreateProject.css */
+
+:root {
+  --accent-color: #6d28d9;
+  --accent-hover: #5b21b6;
+  --form-bg: rgba(255, 255, 255, 0.15);
+  --blur: blur(20px);
+  --backdrop-filter: blur(20px);
+}
+
+
+.create-project-container {
+  background: var(--form-bg);
+  backdrop-filter: var(--blur);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 24px;
+  padding: 30px 25px;           
+  max-width: 450px;             
+  width: 25%;                  
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  color: #1e1e1e;
+  animation: fadeIn 0.8s ease;
+}
+
+
+.create-project-title {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.create-project-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-input,
+.form-textarea {
+  border: none;
+  border-radius: 14px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  background-color: rgba(255, 255, 255, 0.85);
+  color: #333;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(109, 40, 217, 0.3);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-button {
+  background-color: var(--accent-color);
+  color: white;
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 14px rgba(109, 40, 217, 0.3);
+}
+
+.submit-button:hover {
+  background-color: var(--accent-hover);
+}
+
+.create-project-error {
+  color: #dc2626;
+  font-size: 0.9rem;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

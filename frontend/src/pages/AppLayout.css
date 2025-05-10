@@ -1,0 +1,18 @@
+/* src/layout/AppLayout.css */
+
+.app-layout {
+    background: linear-gradient(135deg, #ede9fe, #c4b5fd);
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    color: #1e1e1e;
+  }
+  
+
+  .centered-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    min-height: 100vh;
+  }
+  

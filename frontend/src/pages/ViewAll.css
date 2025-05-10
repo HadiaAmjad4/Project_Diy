@@ -1,0 +1,140 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+.project-detail-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background: #fff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.06);
+  border-radius: 16px;
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+.project-detail-container ol {
+  padding-left: 1.5rem;
+  margin-bottom: 16px;
+  color: #444;
+  font-size: 1.02rem;
+  line-height: 1.6;
+}
+
+.project-detail-container h1 {
+  text-align: center;
+  font-size: 2.2rem; 
+  font-weight: 500;
+  color: #6d28d9;
+  margin-bottom: 16px; 
+}
+
+.center-text {
+  text-align: center;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 6px; 
+}
+
+.date {
+  font-size: 0.95rem;
+  color: #888;
+  text-align: center;
+  margin-bottom: 20px; 
+}
+
+.project-detail-container h3 {
+  margin-top: 20px; 
+  color: #6d28d9;
+  font-size: 1.2rem; 
+  font-weight: 500;
+  border-left: 4px solid #6d28d9;
+  padding-left: 10px;
+}
+
+.project-detail-container p {
+  line-height: 1.6; 
+  color: #444;
+  font-size: 1.02rem; 
+  margin-bottom: 12px; 
+}
+
+.rating-section {
+  margin-top: 40px; 
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.star-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 12px 0; 
+}
+
+.star {
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+}
+
+.star:hover {
+  transform: scale(1.3);
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.submit-rating-btn {
+  background-color: #6d28d9;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.submit-rating-btn:hover {
+  background-color: #5a21b1;
+  transform: translateY(-2px);
+}
+
+.rating-message {
+  margin-top: 12px;
+  color: #28a745;
+  font-weight: 500;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+.loading {
+  text-align: center;
+  font-style: italic;
+  color: #666;
+  margin-top: 30px;
+  font-size: 1.1rem;
+}
+
+.discussion-link-wrapper {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.discussion-link {
+  font-weight: bold;
+  color: #6d28d9;
+  font-size: 1rem;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.discussion-link:hover {
+  color: #4c1d95;
+}

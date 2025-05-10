@@ -1,0 +1,151 @@
+/* src/pages/Home.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #ede9fe, #c4b5fd);
+  color: #4c1d95;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 0 20px;
+  background: linear-gradient(
+      to bottom,
+      rgba(244, 239, 255, 0.8),
+      rgba(240, 231, 255, 0.95)
+    ),
+    url('https://images.unsplash.com/photo-1506113920058-5420d3ec7d96') no-repeat center center fixed;
+  background-size: cover;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero-section {
+  max-width: 600px;
+  margin: 0 auto;
+  animation: slideUp 0.7s ease;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+  color: #4c1d95;
+  animation: fadeInUp 1s ease;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #6b21a8;
+}
+
+.cta-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.cta-btn {
+  background-color: #6b21a8;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 8px 20px rgba(107, 33, 168, 0.3);
+  transition: background 0.3s, transform 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #4c1d95;
+  transform: scale(1.05);
+}
+
+.cta-btn:focus {
+  outline: none;
+}
+
+/* Blurred Gradient Blobs */
+.blob {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle at 30% 30%, #c4b5fd 0%, #a78bfa 100%);
+  filter: blur(100px);
+  z-index: 0;
+  opacity: 0.5;
+  animation: float 8s ease-in-out infinite;
+}
+
+.blob2 {
+  top: 10%;
+  left: 5%;
+  background: radial-gradient(circle at 70% 70%, #ede9fe 0%, #d8b4fe 100%);
+}
+
+.blob3 {
+  bottom: 5%;
+  right: 10%;
+  background: radial-gradient(circle at 50% 50%, #a78bfa 0%, #7c3aed 100%);
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+}
+
+/* Glassmorphism effect on hero */
+.hero-section {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 40px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 1;
+}

@@ -70,6 +70,7 @@ cd Project_Diy
 
 ### 2. Backend Setup
 
+```bash
 cd backend
 source venv/bin/activate             # Activate virtual environment
 python manage.py migrate             # Apply database migrations
@@ -81,6 +82,7 @@ Access the admin panel at: http://127.0.0.1:8000/admin/
 
 ### 3. Frontend Setup
 
+```bash
 cd ../frontend
 npm install
 npm start   # Start React development server
@@ -88,7 +90,7 @@ Frontend typically runs at: http://localhost:3000/
 
 
 # ✅ Requirements
-
+```bash
 Python 3.8+
 Node.js and npm
 PostgreSQL
